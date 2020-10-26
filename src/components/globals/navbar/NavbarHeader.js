@@ -9,7 +9,7 @@ export default class NavbarHeader extends Component {
   render() {
     const { handleNavbar } = this.props
     return (
-      <HeaderWrapper>
+      <HeaderWrapper> 
         <Link to="/">
           <img src={logo} alt="உணவகம்" />
         </Link>

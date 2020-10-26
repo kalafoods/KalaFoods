@@ -26,7 +26,7 @@ export default class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <div className="title">ணவகம்</div>
+        <div className="title">காலா</div>
         <div className="icons">
           {this.state.icons.map(icon => {
             return (
