@@ -5,40 +5,42 @@ import { Section, Title, SectionButton } from "../../utils"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const query = graphql`
-  {
-    food: allContentfulMenu {
-      edges {
-        node {
-          name
-          price
-          id
-          ingredients
-          image {
-            fixed(width: 150, height: 150) {
-              ...GatsbyContentfulFixed_tracedSVG
-            }
-          }
-        }
-      }
-    }
-  }
-`
+// const query = graphql`
+//   {
+//     food: allContentfulMenu {
+//       edges {
+//         node {
+//           name
+//           price
+//           id
+//           ingredients
+//           image {
+//             fixed(width: 150, height: 150) {
+//               ...GatsbyContentfulFixed_tracedSVG
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 export default function Menu() {
   return (
     <Section>
       <Title title="Our Speciaities" message="Delight in every bite" />
       <ProductList>
-        <StaticQuery
+        {/* <StaticQuery
           query={query}
           render={data => {
             const food = data.food.edges
             return food.map(item => {
-              return <Product key={item.node.id} product={item.node} />
+              // return <Product key={item.node.id} product={item.node} />
+              return <Product />
             })
           }}
-        />
+        /> */}
+        <p>Wassup</p>
       </ProductList>
     </Section>
   )
