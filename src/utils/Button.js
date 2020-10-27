@@ -29,6 +29,7 @@ const BannerButton = styled.button`
 
 const SectionButton = styled(BannerButton)`
   color: ${styles.colors.mainBlack};
+  font-family: 'Anurati', 'Helvetica' !important;
   ${styles.border({ color: `${styles.colors.mainBlack}` })};
   &:hover {
     background: ${styles.colors.mainBlack};

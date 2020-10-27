@@ -4,7 +4,7 @@ import { styles } from "../../utils"
 import Img from "gatsby-image"
 
 export default function Product({ product }) {
-  const { name, price, ingredients, description } = product
+  const { title, price, ingredients, description } = product
   const { fixed } = product.image
 
   return (
@@ -12,10 +12,10 @@ export default function Product({ product }) {
       <Img fixed={fixed} className="img" />
       <div className="text">
         <div className="product-content">
-          <h3 className="name">{name}</h3>
-          <h3 className="description">{description.description}</h3>
+          <h3 className="name">{title}</h3>
           <h3 className="price">{price}</h3>
         </div>
+          <h3 className="description">{description.description}</h3>
         <p className="info">{ingredients}</p>
       </div>
     </ProductWrapper>
@@ -40,6 +40,7 @@ const ProductWrapper = styled.div`
   .name {
     color: ${styles.colors.mainGold};
     margin-top: 0.5rem;
+    font-size: 1rem;
   }
   .description {
     color: ${styles.colors.mainGrey};
