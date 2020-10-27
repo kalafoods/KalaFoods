@@ -11,7 +11,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `react`, `restaurant`]} />
     <HomeHeader img={img}>
-      <Banner title="காலா ஊருகாய்" subtitle="Villupuram, Villupuram">
+      <Banner title="கலா ஊறுகாய்" subtitle="Chennai & Villupuram">
         <a href="#menu">
           <BannerButton style={{ margin: "2rem auto" }}>Menu</BannerButton>
         </a>
