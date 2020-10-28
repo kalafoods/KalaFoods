@@ -36,9 +36,8 @@ export default function Menu() {
           query={query}
           render={data => {
             const pickles = data.pickles.edges
-            return pickles.map(item => {
-              return <Product key={item.node.id} product={item.node} />
-            })
+            return pickles.map(item =>  <Product key={item.node.id} product={item.node} />
+            )
           }}
         />
       </ProductList>

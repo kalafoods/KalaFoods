@@ -18,12 +18,10 @@ export default class QuickInfo extends Component {
             commodi quas, vero debitis nostrum labore voluptatum quos quasi
             architecto minima magnam id autem aperiam?
           </p>
-        </QuickInfoWapper>
-        <SectionButton style={{ margin: "2rem auto" }}>
-          <Link to="/about/" style={{ textDecoration: "none", color: `${styles.colors.mainBlack}` }}>
-            About
+          <Link to="/about/" style={{ textDecoration: "none" }}>
+        <SectionButton style={{ margin: "2rem auto" }}>About</SectionButton>
           </Link>
-        </SectionButton>
+        </QuickInfoWapper>
       </Section>
     )
   }

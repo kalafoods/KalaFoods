@@ -11,7 +11,7 @@ const BannerButton = styled.button`
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   font-weight: 700;
-  border: 0.5px solid rgba(255, 255, 255, 0.4);
+  border: 0.1px solid rgba(255, 255, 255, 0.4);
   margin-top: 1rem;
   ${styles.transition({})};
   &:hover {

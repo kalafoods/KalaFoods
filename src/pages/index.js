@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { HomeHeader, Banner, BannerButton } from "../utils"
@@ -12,9 +13,9 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `react`, `restaurant`]} />
     <HomeHeader img={img}>
       <Banner title="கலா ஊறுகாய்" subtitle="Chennai & Villupuram">
-        <a href="#menu">
+        <Link to="/menu">
           <BannerButton style={{ margin: "2rem auto" }}>Menu</BannerButton>
-        </a>
+        </Link>
       </Banner>
     </HomeHeader>
     <QuickInfo />
